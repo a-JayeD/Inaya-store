@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@theme{--color-ink:#1d2236;--color-paper:#f8f8f6;--color-indigo:#26305c;--color-madder:#b5413b;--color-line:#dcdcd6;--font-sans:"Hind Siliguri",system-ui,sans-serif;--font-display:"Fraunces",Georgia,serif}
+body{background:var(--color-paper);color:var(--color-ink);font-family:var(--font-sans)}
+.inp{@apply w-full rounded-sm border border-line bg-white px-3 py-2.5 focus:outline-2 focus:outline-indigo}
+.btn{@apply rounded-sm bg-indigo px-6 py-3 font-semibold text-white hover:bg-indigo/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo disabled:opacity-50}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
